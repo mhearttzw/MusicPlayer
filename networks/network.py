@@ -19,7 +19,7 @@ from PyQt5.QtGui import QPixmap
 #     noGevent = True
 noGevent = True
 
-import httpBase
+from networks import httpBase
 
 Requests = httpBase.Requests()
 Session = httpBase.Session()

@@ -2,12 +2,13 @@ __author__ = 'cyrbuzz'
 """不要单独运行。"""
 import os
 
-import network
-import addition
-import netEaseApi
+import networks.network as network
+import widgets.addition as addition
+import apis.netEaseApi as netEaseApi
 
-from base import *
+from widgets.base import *
 
+from PyQt5.QtWidgets import *
 
 # netEaseApi
 netEase = netEaseApi.NetEaseWebApi()

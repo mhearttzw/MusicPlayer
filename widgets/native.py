@@ -7,14 +7,15 @@ import os.path
 
 import eyed3
 
-from base import *
-from addition import itv2time
+from widgets.base import *
+from widgets.addition import itv2time
 
 def getAllFolder(topFolder):
     result = []
 
     def findFolder(topFolder):
         folders = [os.path.join(topFolder, i) for i in os.listdir(topFolder) if not os.path.isfile(os.path.join(topFolder, i))]
+        print(str(folders))
         if not folders:
             return 
         else:

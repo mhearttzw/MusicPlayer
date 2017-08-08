@@ -9,9 +9,8 @@ from PyQt5.QtGui import QBrush, QColor, QIcon, QCursor
 from PyQt5.QtCore import QUrl, QSize, Qt, QObject, QPropertyAnimation, QRect, QEasingCurve, QAbstractAnimation
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent, QMediaMetaData, QMediaPlaylist
 
-import addition
-
-from network import NetWorkThread
+from widgets import addition
+from networks.network import NetWorkThread
 
 
 """底部的播放组件。主要是用于交互，包括播放/前进/后退/进度条/音量控制/播放模式/打开or关闭音乐列表。"""

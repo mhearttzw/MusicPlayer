@@ -14,18 +14,23 @@ __author__ = 'cyrbuzz'
 
 import sys
 
+
+"""
+当我们导入一个模块时，默认情况下python解析器会搜索当前目录、已安装的内置模块和第三方模块，
+搜索路径存放在sys模块的path中
+"""
 sys.path.append('widgets')
 sys.path.append('networks')
 sys.path.append('apis')
 
-from base import *
-from player import *
-from native import NativeMusic
-from netEaseSingsFrames import *
+from widgets.base import *
+from widgets.player import *
+from widgets.native import NativeMusic
+from widgets.netEaseSingsFrames import *
 
-import network
-import addition
-import netEaseApi
+import networks.network
+import widgets.addition as addition
+import apis.netEaseApi as netEaseApi
 
 # netEaseApi
 netEase = netEaseApi.NetEaseWebApi()
